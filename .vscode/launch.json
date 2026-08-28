@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug GDScript (Launch Game)",
+            "type": "godot",
+            "request": "launch",
+            "project": "${workspaceRoot}",
+        },
+        {
+            "name": "Debug GDExtension (Launch)",
+            "type": "cppdbg",
+            "request": "launch",
+            "target": "/usr/local/bin/godot",
+            "program": "/usr/local/bin/godot",
+            "arguments": "-e --path ${workspaceRoot}/project",
+            "cwd": "${workspaceRoot}/project",
+            "preLaunchTask": "Build GDExtension (Debug)",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "additionalSOLibSearchPath": "${workspaceRoot}/project/build/bin",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+    ]
+}
