@@ -1,0 +1,12 @@
+{
+    "editor.formatOnSave": true,
+    "[gdscript]": {
+        "editor.defaultFormatter": "DoHe.godot-format"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm.clangd"
+    },
+    "[hpp]": {
+        "editor.defaultFormatter": "llvm.clangd"
+    }
+}
